@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatrixDrawer</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css">
+    <script async src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+</head>
+<body>
+    <div class="flex flex-col justify-center items-center h-screen w-screen text-center">
+        <div>
+            <!-- Auto generate grid -->
+            <h1 class="mb-3 text-xl font-bold">Matrice</h1>
+            <div class="flex space-x-1" id="matrix">
+                <div id="col-0">
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-0-0"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-0-1"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-0-2"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-0-3"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-0-4"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-0-5"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-0-6"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-0-7"></div>
+                </div>
+                <div id="col-1">
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-1-0"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-1-1"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-1-2"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-1-3"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-1-4"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-1-5"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-1-6"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-1-7"></div>
+                </div>
+                <div id="col-2">
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-2-0"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-2-1"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-2-2"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-2-3"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-2-4"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-2-5"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-2-6"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-2-7"></div>
+                </div>
+                <div id="col-3">
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-3-0"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-3-1"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-3-2"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-3-3"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-3-4"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-3-5"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-3-6"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-3-7"></div>
+                </div>
+                <div id="col-4">
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-4-0"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-4-1"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-4-2"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-4-3"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-4-4"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-4-5"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-4-6"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-4-7"></div>
+                </div>
+                <div id="col-5">
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-5-0"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-5-1"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-5-2"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-5-3"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-5-4"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-5-5"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-5-6"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-5-7"></div>
+                </div>
+                <div id="col-6">
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-6-0"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-6-1"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-6-2"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-6-3"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-6-4"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-6-5"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-6-6"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-6-7"></div>
+                </div>
+                <div id="col-7">
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-7-0"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-7-1"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-7-2"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-7-3"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-7-4"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-7-5"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-7-6"></div>
+                    <div class="bg-black h-5 w-5 mt-1 rounded" id="px-7-7"></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex space-x-1 mt-5">
+            <div class="bg-[#ff0000] h-5 w-5 rounded"></div>
+            <div class="bg-[#00ff00] h-5 w-5 rounded"></div>
+            <div class="bg-[#0000ff] h-5 w-5 rounded"></div>
+        </div>
+        <button class="g-black mt-2 bg-black text-white hover:bg-zinc-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium transition duration-150 ease-out hover:ease-in">Appliquer</button>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+</html>
