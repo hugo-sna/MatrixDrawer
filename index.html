@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple 8x8 pixel art editor to draw on a hardware matrix.">
     <title>MatrixDrawer</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css">
     <script async src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
 </head>
 <body>
-    <div class="flex flex-col justify-center items-center h-screen w-screen text-center">
+    <div class="flex flex-col justify-center items-center h-screen w-screen text-center grow-in">
         <div>
             <!-- Auto generate grid -->
             <h1 class="mb-3 text-xl font-bold">Matrice</h1>
@@ -97,12 +98,12 @@
             </div>
         </div>
         <div class="flex space-x-1 mt-5">
-            <div class="bg-[#ff0000] h-5 w-5 rounded" id="red" onclick="changeSelectedColor('red')"></div>
-            <div class="bg-[#00ff00] h-5 w-5 rounded" id="green" onclick="changeSelectedColor('green')"></div>
-            <div class="bg-[#0000ff] h-5 w-5 rounded" id="blue" onclick="changeSelectedColor('blue')"></div>
+            <div class="bg-[#ff0000] h-5 w-5 rounded outline-2" id="red" onclick="changeSelectedColor('red')"></div>
+            <div class="bg-[#00ff00] h-5 w-5 rounded outline-2" id="green" onclick="changeSelectedColor('green')"></div>
+            <div class="bg-[#0000ff] h-5 w-5 rounded outline-2" id="blue" onclick="changeSelectedColor('blue')"></div>
         </div>
-        <button class="g-black mt-2 bg-black text-white hover:bg-zinc-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium transition duration-150 ease-out hover:ease-in" onclick="render()">Appliquer</button>
-        <textarea id="result" cols="30" rows="1" readonly class="hidden outline outline-1 mt-1 rounded"></textarea>
+        <button class="g-black mt-2 bg-black text-white hover:bg-zinc-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium transition duration-150 ease-out hover:ease-in hyse-style-button" onclick="render()">Appliquer</button>
+        <textarea id="result" cols="30" rows="1" readonly class="hidden outline outline-1 mt-1 rounded fade-in"></textarea>
         <p class="mt-5">
             Fait par <a href="https://github.com/hugo-sna/MatrixDrawer" target="_blank" class="color-zinc-700 underline">Hugo Schwab</a>.
         </p>

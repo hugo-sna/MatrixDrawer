@@ -1,0 +1,27 @@
+.grow-in {
+    animation: grow-in ease-out 350ms;
+}
+@keyframes grow-in {
+    0% {
+        scale: 0;
+        opacity: 0;
+    }
+    20% {
+        opacity: 100%;
+    }
+    100% {
+        scale: 100%;
+    }
+}
+
+.fade-in {
+    animation: fade-in ease-out 150ms;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

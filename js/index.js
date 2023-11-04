@@ -67,7 +67,7 @@ function render() {
         }
         varList.push(tmpStr);
     }
-    tmpStr = `const int32[8] image = {${varList[0]},${varList[1]},${varList[2]},${varList[3]},${varList[4]},${varList[5]},${varList[6]},${varList[7]}};`
+    tmpStr = `const int32[8] = {${varList[0]},${varList[1]},${varList[2]},${varList[3]},${varList[4]},${varList[5]},${varList[6]},${varList[7]}};`
     let resultTxtArea = document.getElementById('result');
     resultTxtArea.value = tmpStr;
     resultTxtArea.classList.remove('hidden');
