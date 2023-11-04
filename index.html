@@ -102,7 +102,11 @@
             <div class="bg-[#00ff00] h-5 w-5 rounded outline-2" id="green" onclick="changeSelectedColor('green')"></div>
             <div class="bg-[#0000ff] h-5 w-5 rounded outline-2" id="blue" onclick="changeSelectedColor('blue')"></div>
         </div>
-        <button class="g-black mt-2 bg-black text-white hover:bg-zinc-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium transition duration-150 ease-out hover:ease-in hyse-style-button" onclick="render()">Appliquer</button>
+        <div class=" mt-2">
+            <input type="checkbox" id="cpyres" checked/>
+            <label for="cpyres" class="select-none">Copier le résultat</label>
+        </div>
+        <button class="g-black bg-black text-white hover:bg-zinc-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium transition duration-150 ease-out hover:ease-in hyse-style-button" onclick="render()">Appliquer</button>
         <textarea id="result" cols="30" rows="1" readonly class="hidden outline outline-1 mt-1 rounded fade-in"></textarea>
         <p class="mt-5">
             Fait par <a href="https://github.com/hugo-sna/MatrixDrawer" target="_blank" class="color-zinc-700 underline">Hugo Schwab</a>.

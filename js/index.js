@@ -69,6 +69,10 @@ function render() {
     }
     tmpStr = `const int32[8] = {${varList[0]},${varList[1]},${varList[2]},${varList[3]},${varList[4]},${varList[5]},${varList[6]},${varList[7]}};`
     let resultTxtArea = document.getElementById('result');
+    let shouldCopyResult = document.getElementById('cpyres').checked;
+    if (shouldCopyResult) {
+        navigator.clipboard.writeText(tmpStr);
+    }
     resultTxtArea.value = tmpStr;
     resultTxtArea.classList.remove('hidden');
     varList = [];
